@@ -1,0 +1,50 @@
+.container {
+	max-width: 1000px;
+	border-color: #000;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.image {
+	display: flex;
+	align-self: center;
+	overflow: hidden;
+	border-radius: 5px;
+	max-height: 30vh;
+	margin: 20px;
+}
+.description {
+	overflow: hidden;
+	background-color: #484848;
+	box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.94);
+	border-radius: 10px;
+	margin: 20px auto;
+	border-color: #000;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	align-self: center;
+}
+
+.title {
+	text-decoration: none;
+	text-align: center;
+	color: "white";
+	padding: 1rem;
+}
+.date {
+	text-decoration: none;
+	color: "white";
+	padding: 1rem;
+}
+.readMore {
+	padding: 1rem;
+}
+
+.content {
+	display: flex;
+}

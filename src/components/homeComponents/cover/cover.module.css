@@ -1,0 +1,16 @@
+.nameContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.name {
+	font-size: 50px;
+	text-align: left;
+}
+
+.sub {
+	font-size: 30px;
+	text-align: left;
+}

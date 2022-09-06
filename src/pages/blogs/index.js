@@ -22,30 +22,26 @@ export default function Blog(props) {
 	}, [rss2json]);
 
 	return (
-		<body>
-			<Header />
-			<div className='container'>
-				{blogs.map(function (d, idx) {
-					return (
-						<section>
-							{idx === 0 && <SubHeader />}
-							<BlogCard
-								title={d.title}
-								link={d.link}
-								pubDate={d.pubDate}
-								description={d.description}
-								thumbnail={d.thumbnail}
-								d={d}
-							/>
-						</section>
-					);
-				})}
-				{blogs.length > 0 && (
+		<div className='container'>
+			{blogs.map(function (d, idx) {
+				return (
 					<section>
-						<SubFooter />
+						<BlogCard
+							title={d.title}
+							link={d.link}
+							pubDate={d.pubDate}
+							description={d.description}
+							thumbnail={d.thumbnail}
+							d={d}
+						/>
 					</section>
-				)}
-			</div>
-		</body>
+				);
+			})}
+			{blogs.length > 0 && (
+				<section>
+					<SubFooter />
+				</section>
+			)}
+		</div>
 	);
 }

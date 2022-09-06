@@ -4,7 +4,6 @@ import theme from "../../../styles/theme";
 import styles from "./cover.module.css";
 import logo from "../../../assets/images/icon.png";
 import Links from "../links/links";
-import Header from "../header/header";
 
 const Cover = ({ mobileView }) => {
 	const list = [
@@ -38,10 +37,9 @@ const Cover = ({ mobileView }) => {
 				width: "100%",
 				justifyContent: "space-between",
 				flexDirection: "column",
-				minHeight: "100vh",
+				minHeight: "90vh",
 			}}
 		>
-			<Header mobileView={mobileView} />
 			<div
 				style={{
 					display: "flex",

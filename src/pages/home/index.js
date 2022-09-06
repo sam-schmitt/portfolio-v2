@@ -21,31 +21,29 @@ export default function Home() {
 		};
 	}, []);
 	return (
-		<body>
-			<div className='container'>
-				<section>
-					<Cover mobileView={mobileView} />
-				</section>
-				{projectsArray.map(function (d, idx) {
-					return (
-						<section>
-							<ProjectCard
-								link={d.link}
-								linkName={d.linkName}
-								title={d.title}
-								description={d.description}
-								image={d.image}
-								tools={d.tools}
-								sections={d.sections}
-								mobileView={mobileView}
-							/>
-						</section>
-					);
-				})}
-				<section>
-					<SubFooter />
-				</section>
-			</div>
-		</body>
+		<div className='container'>
+			<section>
+				<Cover mobileView={mobileView} />
+			</section>
+			{projectsArray.map(function (d, idx) {
+				return (
+					<section>
+						<ProjectCard
+							link={d.link}
+							linkName={d.linkName}
+							title={d.title}
+							description={d.description}
+							image={d.image}
+							tools={d.tools}
+							sections={d.sections}
+							mobileView={mobileView}
+						/>
+					</section>
+				);
+			})}
+			<section>
+				<SubFooter />
+			</section>
+		</div>
 	);
 }
